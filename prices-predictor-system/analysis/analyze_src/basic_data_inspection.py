@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 import pandas as pd
 
 # Abstract Base Class for Data Inspection Strategies
