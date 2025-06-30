@@ -1,6 +1,9 @@
 import logging
 from typing import Tuple
+import sys
+import os
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import pandas as pd
 from sklearn.pipeline import Pipeline
 from src.model_evaluator import ModelEvaluator, RegressionModelEvaluationStrategy

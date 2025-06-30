@@ -1,9 +1,8 @@
 import pandas as pd
 import sys
 import os
-sys.path.append(os.path.abspath('../'))
-import exception
-from logger import logging
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.ingest_data import DataIngestorFactory
 from zenml import step
 @step

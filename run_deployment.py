@@ -1,4 +1,9 @@
 import click
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from pipelines.deployment_pipeline import (
     continuous_deployment_pipeline,
     inference_pipeline,
