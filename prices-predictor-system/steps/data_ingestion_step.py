@@ -1,4 +1,8 @@
 import pandas as pd
+import sys
+import os
+sys.path.append(os.path.abspath('../'))
+from logger import logging
 from src.ingest_data import DataIngestorFactory
 from zenml import step
 @step
@@ -13,3 +17,4 @@ def data_ingestion_step(file_path: str) -> pd.DataFrame:
     # Ingest the data and load it into a DataFrame
     df = data_ingestor.ingest(file_path)
     return df
+
